@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.main
+{
+    min-height: 100px;
+    display: flex;
+    
+}
+
+.main header
+{
+    min-width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;    
+}
+
+.main header .logo
+{
+    max-width: 90px;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+.main header .navegacion li
+{
+    list-style: none; /*Quita viñetas bro*/
+    text-decoration: none; 
+}
+
+.main header .navegacion li a
+{
+    text-decoration: none;
+    position: relative;
+    margin-right: 40px;   
+    font-size: large;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.main header .navegacion
+{
+    display: flex;
+    flex-direction: row;
+}
+
+body
+{
+    margin: 0;
+    min-width: 100vh;
+    background: radial-gradient(circle at center, #4f87bd 0%, #0062be 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+
+
+}
+.content .texto h2
+{
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    margin-bottom: 5px;
+
+}
+
+.content .texto p {
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    justify-content: center;
+    text-align: justify;
+    max-width: 400px;
+
+}
+
+.content .texto .btnordenar
+{
+    padding: 20px 35px;
+    background-color: white;
+    border-radius: 50px;
+    color: #0062be;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.content .lataPepsi
+{
+    max-width: 700px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    margin-right: 90px;
+    padding-right: 200px;
+
+}
