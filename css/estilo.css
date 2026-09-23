@@ -9,32 +9,43 @@
 {
     min-height: 100px;
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    flex-direction: column;
     
 }
 
 .main header
 {
-    min-width: 100%;
+    min-width: 100%; /* Se extiende al 100%*/
     padding: 20px;
     justify-content: space-between;
     display: flex;
-    margin-top: 20px;
-    align-items: center;    
+    position: absolute;
+    top: 0;
+    left: 0; 
+    align-items: center;
 }
 
 .main header .logo
 {
-    max-width: 90px;
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 50px;
+    max-width: 150px;
+    margin-left: 60px;
+
 }
 
 .main header .navegacion li
 {
     list-style: none; /*Quita viñetas bro*/
     text-decoration: none; 
+}
+
+.main header .navegacion li:hover a
+{
+    color: #be0000;
+    transition: 0.5s;
 }
 
 .main header .navegacion li a
@@ -63,27 +74,37 @@ body
     background-attachment: fixed;
 }
 
-.content
+
+
+.main .content
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 80px;
+    margin-top: 150px;
+    margin-right: 200px;
 
 
 }
-.content .texto h2
+
+.main .content .texto
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+.main .content .texto h2
 {
     color: white;
     font-family: cursive;
     font-style: italic;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.4;
-    margin-bottom: 5px;
+    margin: 30px 0px;
 
 }
 
-.content .texto p {
+.main .content .texto p {
     color: white;
     font-family: cursive;
     font-weight: bold;
@@ -93,29 +114,42 @@ body
     margin-bottom: 70px;
     justify-content: center;
     text-align: justify;
-    max-width: 400px;
+    max-width: 700px;
 
 }
 
-.content .texto .btnordenar
+.main .content .texto .btnordenar
 {
     padding: 20px 35px;
     background-color: white;
     border-radius: 50px;
     color: #0062be;
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-.content .lataPepsi
+.btnordenar:hover
+{
+    background-color: #494a4b;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.main .content .lataPepsi
 {
     max-width: 700px;
     margin-top: 20px;
     width: 100%;
     height: auto;
-    margin-right: 90px;
-    padding-right: 200px;
+    margin-left: 200px;
+    position: relative;
+    padding-right: 100px;
 
 }
+
